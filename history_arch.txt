@@ -1,0 +1,31 @@
+## Sddm не подходит для i3wm!
+sudo pacman -S btop
+sudo pacman -S neovim
+touch .xinitrc
+sudo pacman -S firefox
+sudo pacman -S wezterm
+
+## fc-cache -fv если надо обновить шрифты в системе fc-list
+sudo pacman -S tlp
+sudo systemctl enable --now tlp
+sudo pacman -S cpupower
+sudo systemctl enable --now cpupower
+
+## Подсветка монитора
+sudo pacman -S acpilight
+xbacklight -set 40
+
+## ** Clean Arch
+## - https://youtu.be/zUbXOXqrZBs?si=mM9cXMYgkZ48WCoi
+
+sudo pacman -S feh
+sudo pacman -S neofetch
+sudo pacman -S picom
+sudo pacman -S git
+sudo pacman -S man tldr
+
+## Установить yay
+sudo pacman -S --needed base-devel git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si

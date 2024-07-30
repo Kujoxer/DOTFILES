@@ -46,6 +46,8 @@ config.default_cursor_style = "BlinkingBar"
 config.cursor_blink_rate = 600
 config.cursor_blink_ease_out = "Linear"
 
+config.enable_tab_bar = false  -- Отключает строку с вкладками
+
 -- keymappings
 config.keys = {
 	{
