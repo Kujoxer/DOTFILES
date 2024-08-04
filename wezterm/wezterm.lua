@@ -4,6 +4,7 @@ local wezterm = require("wezterm")
 -- This table will hold the configuration.
 local config = {}
 
+config.color_scheme = "Batman"
 -- In newer versions of wezterm, use the config_builder which will
 -- help provide clearer error messages
 if wezterm.config_builder then
@@ -19,7 +20,7 @@ config.default_prog = { "/usr/bin/bash", "-l" }
 -- config.default_prog = { 'powershell', '-NoLogo' }
 
 config.detect_password_input = true
-config.window_background_opacity = 0.85
+config.window_background_opacity = 0.65
 
 config.font = wezterm.font_with_fallback({
 	--"SpaceMono Nerd Font Mono",
@@ -45,8 +46,11 @@ config.window_close_confirmation = "NeverPrompt"
 config.default_cursor_style = "BlinkingBar"
 config.cursor_blink_rate = 600
 config.cursor_blink_ease_out = "Linear"
+config.initial_cols = 115 -- Задайте начальное количество столбцов
+config.initial_rows = 28 -- Задайте начальное количество строк
 
-config.enable_tab_bar = false  -- Отключает строку с вкладками
+config.enable_tab_bar = false -- Отключает строку с вкладками
+config.window_decorations = "NONE"
 
 -- keymappings
 config.keys = {
